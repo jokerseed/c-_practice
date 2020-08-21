@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+using System.Reflection;
 
 namespace c
 {
@@ -68,6 +71,90 @@ namespace c
             // {
             //     Console.WriteLine($"Hello {name.ToUpper()}!");
             // }
+
+            // names.ForEach((a) =>
+            // {
+            //     Console.WriteLine(a);
+            // });
+
+            // var t = new List<int>() { 1, 2, 3 };
+            // Console.WriteLine(t[1]);
+
+            // names.Add("qwe");
+            // names.Remove("Ana");
+
+            // throw 语句将引发异常。 当前块执行结束，将控制权移交给在调用堆栈中发现的第一个匹配的 catch 块。 添加 catch 块可以稍后再测试一下此代码。
+            // try
+            // {
+            //     throw new InvalidOperationException("Not sufficient funds for this withdrawal");
+            // }
+            // catch (ArgumentOutOfRangeException e)
+            // {
+            //     Console.WriteLine(e.ToString());
+            // }
+
+            //使用stringBuilder
+            // var report = new StringBuilder();
+            // report.AppendLine("Date\t\tAmount\tBalance\tNote");
+            // Console.WriteLine(report.ToString());
+
+            // Person p = new Person("神经病");
+            // Console.WriteLine(p.Name);
+            // Console.WriteLine(p.ToString());
+
+            //平均子串长度
+            // var phrase = "the quick brown fox jumps over the lazy dog";
+            // var wordLength = from word in phrase.Split(' ') select word.Length;
+            // var average = wordLength.Average();
+            // Console.WriteLine(average);
+
+            // string s = null;
+            // char? c = s?[0];
+            // Console.WriteLine(c.HasValue);
+            // Console.Write(nameof(s));
+
+            // var startingDeck = from s in Suits()
+            //                    from r in Ranks()
+            //                    select new { Suit = s, Rank = r };
+
+            // // Display each card that we've generated and placed in startingDeck in the console
+            // foreach (var card in startingDeck)
+            // {
+            //     Console.WriteLine(card);
+            // }
+
+            //反射
+            Console.WriteLine(typeof(Person));
+            Console.WriteLine(typeof(Person).GetTypeInfo());
+            Console.WriteLine(typeof(Person).GetTypeInfo().GetCustomAttributes());
+        }
+
+        // Program.cs
+        // The Main() method
+
+        static IEnumerable<string> Suits()
+        {
+            yield return "clubs";
+            yield return "diamonds";
+            yield return "hearts";
+            yield return "spades";
+        }
+
+        static IEnumerable<string> Ranks()
+        {
+            yield return "two";
+            yield return "three";
+            yield return "four";
+            yield return "five";
+            yield return "six";
+            yield return "seven";
+            yield return "eight";
+            yield return "nine";
+            yield return "ten";
+            yield return "jack";
+            yield return "queen";
+            yield return "king";
+            yield return "ace";
         }
     }
 }
