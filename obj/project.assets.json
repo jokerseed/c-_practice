@@ -8,24 +8,31 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\86186\\.nuget\\packages\\": {}
+    "C:\\Users\\57320\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\c.csproj",
+      "projectUniqueName": "E:\\mymymymymymymmymymy\\csharp_practice\\c.csproj",
       "projectName": "c",
-      "projectPath": "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\c.csproj",
-      "packagesPath": "C:\\Users\\86186\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\obj\\",
+      "projectPath": "E:\\mymymymymymymmymymy\\csharp_practice\\c.csproj",
+      "packagesPath": "C:\\Users\\57320\\.nuget\\packages\\",
+      "outputPath": "E:\\mymymymymymymmymymy\\csharp_practice\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\86186\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\57320\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
