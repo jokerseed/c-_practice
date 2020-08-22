@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\c.csproj": {}
+    "E:\\mymymymymymymmymymy\\csharp_practice\\c.csproj": {}
   },
   "projects": {
-    "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\c.csproj": {
+    "E:\\mymymymymymymmymymy\\csharp_practice\\c.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\c.csproj",
+        "projectUniqueName": "E:\\mymymymymymymmymymy\\csharp_practice\\c.csproj",
         "projectName": "c",
-        "projectPath": "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\c.csproj",
-        "packagesPath": "C:\\Users\\86186\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\86186\\Desktop\\ymmymy\\csharp_practice\\obj\\",
+        "projectPath": "E:\\mymymymymymymmymymy\\csharp_practice\\c.csproj",
+        "packagesPath": "C:\\Users\\57320\\.nuget\\packages\\",
+        "outputPath": "E:\\mymymymymymymmymymy\\csharp_practice\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\86186\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\57320\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,6 +41,28 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Console": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Reflection": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Reflection.Extensions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
