@@ -128,12 +128,32 @@ namespace c
             // Console.WriteLine(typeof(Person).GetTypeInfo());
             // Console.WriteLine(typeof(Person).GetTypeInfo().GetCustomAttributes());
             // Console.WriteLine(typeof(Person).GetFields());
-            // Person p = new Person("xx");
+            Person p = new Person("xx");
             // Console.WriteLine(p);
             // Console.WriteLine(p.GetType());
             // Console.WriteLine(p.GetType().GetTypeInfo().GetCustomAttributes());
             // Console.WriteLine(p.GetType().GetProperties());
             // Console.WriteLine(p.GetType().GetFields());
+
+
+            // var t = p.GetType().GetTypeInfo().GetCustomAttributes();
+            // foreach (var temp in t)
+            // {
+            //     System.Console.WriteLine(temp);
+            // }
+
+            // var list = new List<int>();
+            // list.Add(1);
+
+            // list.Add(1);
+            // list.Add(1);
+            // list.Add(1);
+
+            // list.Add(1);
+            // list.Add(1);
+            // list.Add(1);
+            // list.Add(1);
+            // list.ForEach(f => System.Console.WriteLine(f));
         }
 
         // Program.cs
