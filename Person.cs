@@ -2,8 +2,8 @@ using System;
 
 namespace c
 {
-    [MySpecial]
-    class Person
+    [MySpecial("attribute--test")]
+    public class Person
     {
         private string name;
 

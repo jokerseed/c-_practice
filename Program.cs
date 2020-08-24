@@ -124,9 +124,16 @@ namespace c
             // }
 
             //反射
-            Console.WriteLine(typeof(Person));
-            Console.WriteLine(typeof(Person).GetTypeInfo());
-            Console.WriteLine(typeof(Person).GetTypeInfo().GetCustomAttributes());
+            // Console.WriteLine(typeof(Person));
+            // Console.WriteLine(typeof(Person).GetTypeInfo());
+            // Console.WriteLine(typeof(Person).GetTypeInfo().GetCustomAttributes());
+            // Console.WriteLine(typeof(Person).GetFields());
+            Person p = new Person("xx");
+            Console.WriteLine(p);
+            Console.WriteLine(p.GetType());
+            Console.WriteLine(p.GetType().GetCustomAttributes());
+            Console.WriteLine(p.GetType().GetProperties());
+            Console.WriteLine(p.GetType().GetFields());
         }
 
         // Program.cs
