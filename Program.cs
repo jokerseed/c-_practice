@@ -128,7 +128,7 @@ namespace c
             // Console.WriteLine(typeof(Person).GetTypeInfo());
             // Console.WriteLine(typeof(Person).GetTypeInfo().GetCustomAttributes());
             // Console.WriteLine(typeof(Person).GetFields());
-            Person p = new Person("xx");
+            // Person p = new Person("xx");
             // Console.WriteLine(p);
             // Console.WriteLine(p.GetType());
             // Console.WriteLine(p.GetType().GetTypeInfo().GetCustomAttributes());
@@ -154,6 +154,39 @@ namespace c
             // list.Add(1);
             // list.Add(1);
             // list.ForEach(f => System.Console.WriteLine(f));
+
+            //泛形
+            // Pair<string, string> p = new Pair<string, string>("xx", "yy");
+            // Console.WriteLine(p.Name + "  " + p.Nick);
+        }
+
+        [Flags]
+        public enum StateType
+        {
+            on,
+            off
+        }
+
+        interface IC
+        {
+            void c();
+        }
+
+        interface IB
+        {
+            void b();
+        }
+
+        interface IA : IC, IB
+        {
+            void a();
+        }
+
+        public struct Point
+        {
+            public int x;
+            public int y;
+            public int z;
         }
 
         // Program.cs

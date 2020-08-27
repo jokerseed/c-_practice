@@ -3,7 +3,7 @@ using System;
 namespace c
 {
     [MySpecial("attribute--test")]
-    public class Person
+    public class Person : Walk
     {
         private string name;
 
@@ -30,5 +30,10 @@ namespace c
         // }
 
         public override string ToString() => "大傻叉";
+
+        public override void WalkHandle()
+        {
+            Console.WriteLine("人在走路");
+        }
     }
 }
