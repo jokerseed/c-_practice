@@ -160,6 +160,11 @@ namespace c
             // Console.WriteLine(p.Name + "  " + p.Nick);
         }
 
+        public static void ListChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine("list--changed");
+        }
+
         [Flags]
         public enum StateType
         {
