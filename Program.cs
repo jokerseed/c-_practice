@@ -158,6 +158,12 @@ namespace c
             //泛形
             // Pair<string, string> p = new Pair<string, string>("xx", "yy");
             // Console.WriteLine(p.Name + "  " + p.Nick);
+
+            MyList<string> my = new MyList<string>();
+            my.Changed += new EventHandler(ListChanged);
+            my.Add("sss");
+            my.Add("sss");
+            my.Add("sss");
         }
 
         public static void ListChanged(object sender, EventArgs e)
@@ -187,12 +193,12 @@ namespace c
             void a();
         }
 
-        public struct Point
-        {
-            public int x;
-            public int y;
-            public int z;
-        }
+        // public struct Point
+        // {
+        //     public int x;
+        //     public int y;
+        //     public int z;
+        // }
 
         // Program.cs
         // The Main() method
