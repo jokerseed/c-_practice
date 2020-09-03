@@ -8,6 +8,8 @@ namespace c
 {
     class Program
     {
+        public delegate int d1(int a);
+
         static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
@@ -159,11 +161,25 @@ namespace c
             // Pair<string, string> p = new Pair<string, string>("xx", "yy");
             // Console.WriteLine(p.Name + "  " + p.Nick);
 
-            MyList<string> my = new MyList<string>();
-            my.Changed += new EventHandler(ListChanged);
-            my.Add("sss");
-            my.Add("sss");
-            my.Add("sss");
+            // MyList<string> my = new MyList<string>();
+            // my.Changed += new EventHandler(ListChanged);
+            // my.Add("sss");
+            // my.Add("sss");
+            // my.Add("sss");
+
+            //委托
+            // d1 d = cc;
+            // Console.WriteLine(d(1));
+            // Action<int> ac = ccc;
+            // ac(2);
+        }
+        public static void ccc(int ccc)
+        {
+            Console.WriteLine(ccc);
+        }
+        public static int cc(int ccc)
+        {
+            return ccc;
         }
 
         public static void ListChanged(object sender, EventArgs e)
