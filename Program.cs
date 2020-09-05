@@ -172,6 +172,10 @@ namespace c
             // Console.WriteLine(d(1));
             // Action<int> ac = ccc;
             // ac(2);
+
+
+            Program2 p = new Program2();
+            p.Init();
         }
         public static void ccc(int ccc)
         {
