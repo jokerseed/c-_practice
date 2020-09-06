@@ -4,6 +4,7 @@ using System.Text;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace c
 {
@@ -11,7 +12,34 @@ namespace c
     {
         public void Init()
         {
+            // await test();
+            // Console.WriteLine("完成");
 
+            Timer timer = new Timer();
+            timer.Interval = 1000;
+            timer.AutoReset = true;
+            timer.Elapsed += (sender, e) =>
+            {
+                // Console.WriteLine("Tiemr End");
+                // timer.Enabled = false;
+                // timer = null;
+                update();
+            };
+            timer.Enabled = true;
+
+            Console.WriteLine("测试阻塞");
+        }
+
+        private void update()
+        {
+            Console.WriteLine(DateTime.UtcNow);
+        }
+
+        public async Task test()
+        {
+            Console.WriteLine("Delay Start");
+            await Task.Delay(2000);
+            Console.WriteLine("Delay END");
         }
     }
 }

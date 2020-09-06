@@ -176,6 +176,8 @@ namespace c
 
             Program2 p = new Program2();
             p.Init();
+
+            Console.ReadLine();
         }
         public static void ccc(int ccc)
         {
