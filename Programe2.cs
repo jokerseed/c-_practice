@@ -17,7 +17,7 @@ namespace c
 
             Timer timer = new Timer();
             timer.Interval = 1000;
-            timer.AutoReset = true;
+            timer.AutoReset = true;  //true 定时器会重复执行   false   只会执行一次
             timer.Elapsed += (sender, e) =>
             {
                 // Console.WriteLine("Tiemr End");

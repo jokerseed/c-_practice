@@ -174,7 +174,10 @@ namespace c
             // ac(2);
 
 
-            Program2 p = new Program2();
+            // Program2 p = new Program2();
+            // p.Init();
+
+            Program3 p = new Program3();
             p.Init();
 
             Console.ReadLine();
