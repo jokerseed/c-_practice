@@ -73,6 +73,21 @@ namespace c
 
             // Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
             //                   param.Name, left.Name, operation.NodeType, right.Value);
+
+            test(1, 2, 234, 23, 252);
+        }
+
+        void test(params int[] a)
+        {
+            if (a != null && a.Length > 0)
+            {
+                foreach (int v in a)
+                {
+                    Console.WriteLine(v);
+                }
+                return;
+            }
+            Console.WriteLine("没有参数");
         }
     }
 }
