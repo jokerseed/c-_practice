@@ -75,6 +75,7 @@ namespace c
             //                   param.Name, left.Name, operation.NodeType, right.Value);
 
             test(1, 2, 234, 23, 252);
+
         }
 
         void test(params int[] a)
