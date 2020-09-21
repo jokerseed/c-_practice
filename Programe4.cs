@@ -13,10 +13,42 @@ using System.Linq.Expressions;
 
 namespace c
 {
+    struct Books
+    {
+        public string title;
+        public string author;
+        public string subject;
+        public int book_id;
+    };
+
+    enum Player
+    {
+        name,
+        age
+    }
+
     class Program4
     {
+        public Player c = Player.age;
+
+        public void test()
+        {
+            Books books;
+            books.title = "sss";
+            books.author = "aaa";
+            books.subject = "cccc";
+            books.book_id = 1;
+
+            if (books.book_id == Convert.ToInt32(Player.age))
+            {
+                Console.WriteLine("测试");
+            }
+        }
+
         public void Init()
         {
+            test();
+
             Dictionary<string, int> d = new Dictionary<string, int>();
             d["one"] = 10;
             d["two"] = 110;
@@ -74,7 +106,9 @@ namespace c
             // Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
             //                   param.Name, left.Name, operation.NodeType, right.Value);
 
-            test(1, 2, 234, 23, 252);
+            // test(1, 2, 234, 23, 252);
+
+            Console.WriteLine(getIndex(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 5));
 
         }
 
@@ -89,6 +123,32 @@ namespace c
                 return;
             }
             Console.WriteLine("没有参数");
+        }
+
+        //二分查找
+        int getIndex(int[] a, int n)
+        {
+            int max = a.Length - 1;
+            int min = 0;
+            int index = 0;
+            while (min != max)
+            {
+                int temp = (min + max) / 2;
+                if (a[temp] > n)
+                {
+                    max = temp;
+                }
+                else if (a[temp] < n)
+                {
+                    min = temp;
+                }
+                else
+                {
+                    max = min;
+                    index = temp;
+                }
+            }
+            return index;
         }
     }
 }
